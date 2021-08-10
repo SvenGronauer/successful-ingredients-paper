@@ -10,13 +10,21 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sipga",  # this is the name displayed in 'pip list'
-    version="1.0.0",
-    author="Anonymous Authors",
+    version="1.0.1",
+    author="Sven Gronauer",
+    author_email="sven.gronauer@tum.de",
     description="Repository for the Paper: "
                 "Successful ingredients of Policy Gradient Algorithms.",
+    install_requires=[
+        'gym',
+        'itertools',
+        'numpy',
+        'pybullet',
+        'torch'
+    ],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/successful-ingredients-paper",
+    url="https://github.com/SvenGronauer/successful-ingredients-paper",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
